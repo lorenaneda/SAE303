@@ -9,7 +9,7 @@
 }
 
 #container {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -25,6 +25,7 @@
 #riviere{
     position: relative;
     z-index: 0;
+    width: 100%;
 }
 
 @keyframes FadeInOut {
@@ -57,19 +58,22 @@
     height: 100%;
     animation-name: FadeInOut;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-direction: alternate;
+    animation-iteration-count: inherit;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
 }
 
 #nuages{
     z-index: 1;
     display: flex;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 50vh; 
     overflow-y: hidden;
     overflow-x: hidden;
+    margin-top: 10%;
 }
 
 #nuages1{
@@ -103,6 +107,5 @@
 #footer_riviere{
     position: relative;
     width: 100%;
-    height: 25%;
     z-index: 1;
 }
