@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Anton';
+    src: url('fonts/Anton.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sarabun Regular';
+    src: url('fonts/Sarabun-Regular.ttf') format('truetype');
+}
+
 #container {
     width: 100vw;
     height: 100vh;
@@ -47,8 +57,9 @@
 
 #nuages{
     display: flex;
-    width: 100%;
-    height: 50%;
+    position: relative;
+    width: 100vw;
+    height: 50vh; 
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -56,9 +67,7 @@
 #nuages1{
     width: 50%;
     height: 100%;
-    overflow: hidden;
 }
-
 #nuages2{
     width: 50%;
     height: 100%;
@@ -73,3 +82,12 @@
     height: 100%;
 }
 
+.titre{
+    position: absolute;
+    font-family: 'Anton', sans-serif;    
+    font-size: 50pt;
+    color: white;
+    z-index: 3;
+    left: 50vh;
+    top: 3vw; 
+}
