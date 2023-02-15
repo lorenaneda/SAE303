@@ -9,23 +9,22 @@
 }
 
 #container {
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
 #head {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 25%;
     z-index: 1;
 }
 
 #riviere{
-    position: absolute;
+    position: relative;
     z-index: 0;
-    width: 100%;
 }
 
 @keyframes FadeInOut {
@@ -66,7 +65,7 @@
 #nuages{
     z-index: 1;
     display: flex;
-    position: relative;
+    position: absolute;
     width: 100vw;
     height: 50vh; 
     overflow-y: hidden;
