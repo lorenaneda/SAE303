@@ -9,10 +9,12 @@
 }
 
 #container {
+    display: flex;
     width: 100%;
     height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
+    flex-direction: column;
 }
 
 #head {
@@ -23,7 +25,7 @@
 }
 
 #riviere{
-    position: relative;
+    position: absolute;
     z-index: 0;
     width: 100%;
 }
@@ -68,9 +70,8 @@
 #nuages{
     z-index: 1;
     display: flex;
-    position: absolute;
-    width: 100%;
-    height: 50vh; 
+    position: relative;
+    width: 100%; 
     overflow-y: hidden;
     overflow-x: hidden;
     margin-top: 10%;
@@ -104,8 +105,36 @@
     top: 3vw; 
 }
 
+#info2{
+    z-index: 1;
+    position: relative;
+    width: 50%;
+    margin-top: 13%;
+}
+
+#info3{
+    z-index: 1;
+    display: flex;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-top: 27%;
+    margin-inline-end: 10%;
+}
+
+#info3 > span{
+    width: 40%;
+    height: 100%;
+}
+
+#info3 > img{
+    width: 60%;
+    height: 100%;
+}
+
 #footer_riviere{
     position: relative;
     width: 100%;
     z-index: 1;
 }
+
