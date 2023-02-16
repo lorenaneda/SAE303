@@ -19,6 +19,7 @@
     overflow-y: hidden;
     overflow-x: hidden;
     flex-direction: column;
+    gap: 200px;
 }
 
 #head {
@@ -112,12 +113,29 @@
 #info2{
     z-index: 1;
     position: relative;
+    width: 65%;
+}
+
+
+#info3{
+    z-index: 1;
+    display: flex;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-top: 20%;
+    margin-inline-end: 10%;
+}
+
+#info4{
+    z-index: 1;
+    position: relative;
     width: 50%;
-    margin-top: 11.5%;
+    margin-top: 20%;
     margin-inline-start: 2%;
 }
 
-#info3{
+#info5{
     z-index: 1;
     display: flex;
     position: relative;
@@ -137,12 +155,19 @@
     height: 100%;
 }
 
+#info5 > span{
+    width: 40%;
+    height: 100%;
+}
+
+canvas{
+    width: 60%;
+    height: 100%;
+}
+
+
 #footer_riviere{
     position: relative;
     width: 100%;
     z-index: 1;
-}
-
-#animation{
-    width: 50vw;
 }
