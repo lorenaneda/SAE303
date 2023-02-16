@@ -1,11 +1,15 @@
 @font-face {
     font-family: 'Anton';
-    src: url('fonts/Anton.ttf') format('truetype');
+    src: url('../fonts/Anton/Anton-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Sarabun Regular';
-    src: url('fonts/Sarabun-Regular.ttf') format('truetype');
+    font-family: 'Sarabun';
+    src: url('../fonts/Sarabun/Sarabun-Regular.ttf') format('truetype');
+}
+
+.texte{
+    font-family: 'Sarabun', sans-serif;
 }
 
 #container {
@@ -139,3 +143,6 @@
     z-index: 1;
 }
 
+#animation{
+    width: 50vw;
+}
