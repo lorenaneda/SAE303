@@ -19,7 +19,7 @@
     overflow-y: hidden;
     overflow-x: hidden;
     flex-direction: column;
-    gap: 200px;
+    gap: 50px;
 }
 
 #head {
@@ -110,12 +110,48 @@
     top: 3vw; 
 }
 
-#info2{
+#info2_div1{
     z-index: 1;
+    display: flex;
     position: relative;
-    width: 65%;
+    margin-inline-start: 1%;
+    column-gap: 2%;
+    padding-top: 2%;
 }
 
+#info2_div2{
+    z-index: 1;
+    display: flex;
+    position: relative;
+    margin-inline-start: 1%;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+#info2_div2 > span{
+    width: 30%;
+}
+
+#info2_div2_span1{
+    margin-inline-start: 10%;
+}
+
+#info2_div2_span2{
+    padding-top: 10%;
+}
+
+#img_info_1{
+    width: 30%;
+}
+#img_info_2{
+    width: 30%;
+}
+#img_info_3{
+    width: 100%;
+}
+#img_info_4{
+    width: 100%;
+}
 
 #info3{
     z-index: 1;
@@ -123,7 +159,7 @@
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
-    margin-top: 20%;
+    margin-top: 5%;
     margin-inline-end: 10%;
 }
 
@@ -131,7 +167,7 @@
     z-index: 1;
     position: relative;
     width: 50%;
-    margin-top: 20%;
+    margin-top: 22%;
     margin-inline-start: 2%;
 }
 
@@ -141,7 +177,7 @@
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
-    margin-top: 27%;
+    margin-top: 20%;
     margin-inline-end: 10%;
 }
 
