@@ -167,9 +167,13 @@
 #info4{
     z-index: 1;
     position: relative;
-    width: 50%;
+    width: 100%;
     margin-top: 22%;
     margin-inline-start: 2%;
+}
+
+#info4 > img{
+    width: 56%;
 }
 
 #info5{
