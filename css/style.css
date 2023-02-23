@@ -24,14 +24,19 @@
 #head {
     position: absolute;
     width: 100%;
-    height: 25%;
+    height: 33%;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#riviere{
+.titre{
     position: absolute;
-    z-index: 0;
-    width: 100%;
+    font-family: 'Anton', sans-serif;    
+    font-size: 4rem;
+    color: white;
+    z-index: 2; 
 }
 
 @keyframes FadeInOut {
@@ -39,17 +44,40 @@
         opacity: 1;
     }
 
-    45% {
+    20% {
         opacity: 1;
     }
 
-    55% {
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
         opacity: 0;
     }
 
     100% {
         opacity: 0;
     }
+}
+
+#riviere{
+    position: absolute;
+    animation-name: FadeInOut;
+    animation-timing-function: linear;
+    animation-iteration-count: inherit;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+#riviere2 {
+    position: absolute;
 }
 
 #base_riviere2 {
@@ -99,15 +127,6 @@
     height: 100%;
 }
 
-.titre{
-    position: absolute;
-    font-family: 'Anton', sans-serif;    
-    font-size: 50pt;
-    color: white;
-    z-index: 3;
-    left: 50vh;
-    top: 3vw; 
-}
 
 #info2{
     z-index: 1;
