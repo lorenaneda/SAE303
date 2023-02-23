@@ -21,6 +21,7 @@
     flex-direction: column;
 }
 
+
 #head {
     position: absolute;
     width: 100%;
@@ -164,6 +165,7 @@
     position: relative;
     justify-content: space-between;
     margin-inline-start: 2%;
+    margin-top: -5%;
 }
 
 #info2_div3 > span{
@@ -221,9 +223,8 @@
     z-index: 1;
     position: relative;
     width: 100%;
-    margin-top: 7%;
     margin-inline-start: 10%;
-    margin-top: 13%;
+    margin-top: 10%;
 }
 
 #video > video{
@@ -285,4 +286,15 @@ canvas{
     position: relative;
     width: 100%;
     z-index: 1;
+}
+
+#credits{
+    position: relative;
+    font-family: 'Sarabun', sans-serif;    
+    font-size: 1rem;
+    color: white;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
 }
