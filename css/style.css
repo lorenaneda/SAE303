@@ -8,11 +8,11 @@
     src: url('../fonts/Sarabun/Sarabun-Regular.ttf') format('truetype');
 }
 
-.texte{
+.texte {
     font-family: 'Sarabun', sans-serif;
 }
 
-#container {
+.container {
     display: flex;
     width: 100%;
     height: 100%;
@@ -21,8 +21,7 @@
     flex-direction: column;
 }
 
-
-#head {
+.head {
     position: absolute;
     width: 100%;
     height: 33%;
@@ -32,12 +31,12 @@
     justify-content: center;
 }
 
-.titre{
+.titre {
     position: absolute;
-    font-family: 'Anton', sans-serif;    
+    font-family: 'Anton', sans-serif;
     font-size: 4rem;
     color: white;
-    z-index: 2; 
+    z-index: 2;
 }
 
 @keyframes FadeInOut {
@@ -66,7 +65,7 @@
     }
 }
 
-#riviere{
+.riviere {
     position: absolute;
     animation-name: FadeInOut;
     animation-timing-function: linear;
@@ -77,17 +76,17 @@
     animation-fill-mode: forwards;
 }
 
-#riviere2 {
+.riviere2 {
     position: absolute;
 }
 
-#base_riviere2 {
+.base_riviere2 {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-#base_riviere {
+.base_riviere {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -100,42 +99,44 @@
     animation-fill-mode: forwards;
 }
 
-#nuages{
+.nuages {
     z-index: 1;
     display: flex;
     position: relative;
-    width: 100%; 
+    width: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
     margin-top: 10%;
 }
 
-#nuages1{
-    width: 50%;
-    height: 100%;
-}
-#nuages2{
+.nuages1 {
     width: 50%;
     height: 100%;
 }
 
-#img_nuages1{
+.nuages2 {
+    width: 50%;
+    height: 100%;
+}
+
+.img_nuages1 {
     width: 100%;
     height: 100%;
 }
-#img_nuages2{
+
+.img_nuages2 {
     width: 100%;
     height: 100%;
 }
 
 
-#info2{
+.info2 {
     z-index: 1;
     position: relative;
     width: 100%;
 }
 
-#info2_div1{
+.info2_div1 {
     z-index: 1;
     display: flex;
     position: relative;
@@ -144,22 +145,22 @@
     padding-top: 2%;
 }
 
-#info2_div1 > img{
+.info2_div1>img {
     width: 25%;
 }
 
-#info2_div2{
+.info2_div2 {
     display: flex;
     justify-content: space-around;
     margin-inline-start: -27%;
 }
 
-#info2_div2 > img{
+.info2_div2>img {
     width: 30%;
     margin-top: 2%;
 }
 
-#info2_div3{
+.info2_div3 {
     z-index: 1;
     display: flex;
     position: relative;
@@ -168,24 +169,40 @@
     margin-top: -5%;
 }
 
-#info2_div3 > span{
+.info2_div3>span {
     width: 25%;
 }
 
 
-#info3{
+.info3 {
     z-index: 1;
     display: flex;
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
     margin-top: 9%;
-    margin-inline-end: 10%;
     width: 100%;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    flex-wrap: wrap;
 }
 
-#info4{
+.info3 > h2{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 2.5rem;
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#animation {
+    width: 60%;
+    height: 100%;
+    margin-inline-end: 10%;
+}
+
+.info4 {
     z-index: 1;
     position: relative;
     width: 100%;
@@ -193,11 +210,11 @@
     margin-inline-start: 2%;
 }
 
-#info4 > img{
+.info4>img {
     width: 56%;
 }
 
-#info5{
+.info5 {
     z-index: 1;
     display: flex;
     position: relative;
@@ -208,7 +225,7 @@
     flex-direction: row-reverse;
 }
 
-#info6{
+.info6 {
     z-index: 1;
     position: relative;
     display: flex;
@@ -219,7 +236,46 @@
     margin-top: 10%;
 }
 
-#video{
+
+.info5>img {
+    width: 40%;
+    height: 100%;
+}
+
+
+.info6_div1 {
+    width: 40%;
+}
+
+.info6_div2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info6_div2_div1 {
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+
+.info6_div2_div1>img {
+    width: 30%;
+}
+
+.info6_div2_div2 {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info6_div2_div2>img {
+    width: 30%;
+}
+
+
+.video {
     z-index: 1;
     position: relative;
     width: 100%;
@@ -227,74 +283,95 @@
     margin-top: 10%;
 }
 
-#video > video{
+.video > video {
     width: 80%;
     height: 100%;
 }
 
-
-#animation{
-    width: 60%;
-    height: 100%;
-    margin-inline-end: 10%;
-}
-
-
-#info5 > img{
-    width: 40%;
-    height: 100%;
-}
-
-#info6_div1{
-    width: 40%;
-}
-
-#info6_div2{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#info6_div2_div1{
-    width: 100%;
-    display: flex;
-    gap: 10%;
-}
-
-#info6_div2_div1 > img{
-    width: 30%;
-}
-
-#info6_div2_div2{
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-}
-
-#info6_div2_div2 > img{
-    width: 30%;
-}
-
-canvas{
-    width: 60%;
-    height: 100%;
-}
-
-
-#footer_riviere{
+.footer_riviere {
     position: relative;
     width: 100%;
     z-index: 1;
 }
 
-#credits{
+.credits {
     position: relative;
-    font-family: 'Sarabun', sans-serif;    
+    font-family: 'Sarabun', sans-serif;
     font-size: 1rem;
     color: white;
     z-index: 2;
     display: flex;
     justify-content: center;
-    margin-top: 7%;
+    margin-top: 2%;
 }
+
+
+@media (min-width: 321px) and (max-width: 799px) {
+    .head {
+        height: 15%;
+    }
+
+    .titre {
+        font-size: 1rem;
+    }
+    .nuages{
+        margin-top: 15%;
+    }
+    .info3{
+        margin-top: 7%;
+    }
+    .info3 > h2{
+        font-size: 0.5rem;
+    }
+    .info4{
+        margin-top: 17%;
+    }
+    .credits {
+        font-size: 0.5rem;
+        margin-top: 1%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+    .info3 > h2{
+        font-size: 0.7rem;
+    }
+    .credits {
+        font-size: 0.6rem;
+        margin-top: 1%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .head {
+        height: 25%;
+    }
+
+    .titre {
+        font-size: 3rem;
+    }
+    .nuages{
+        margin-top: 17%;
+    }
+    .info3{
+        margin-top: 7%;
+    }
+    .info3 > h2{
+        font-size: 1rem;
+    }
+    .info4{
+        margin-top: 17%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+    .info3{
+        margin-top: 7%;
+    }
+    .info3 > h2{
+        font-size: 1.5rem;
+    }
+}
+
+
+
