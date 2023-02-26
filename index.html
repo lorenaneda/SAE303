@@ -11,7 +11,8 @@
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes" defer></script>-->
     <script src="js/javascript.js" defer></script>
 
 </head>
@@ -65,13 +66,13 @@
         </div>
 
         <div class="info5" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-            <img src="img/img1.svg">
+            <canvas id="chartjs"></canvas>
         </div>
 
         <div class="info6" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             <div class="info6_div1">
-                <img class="img_info6_1" src="img/info_Enzo/conso_info_Enzo.svg" data-aos="fade-right" data-aos-delay="500"
-                    data-aos-duration="1000">
+                <img class="img_info6_1" src="img/info_Enzo/conso_info_Enzo.svg" data-aos="fade-right"
+                    data-aos-delay="500" data-aos-duration="1000">
             </div>
             <div class="info6_div2">
                 <div class="info6_div2_div1">
@@ -100,10 +101,11 @@
 
 
         <footer class="credits">
-            <h3> Copyright 2023 IUT Haguenau & Acikoz Melih, Brunier Enzo, Elharar Etane, Morisset Lucas et Neda Lorena </h3>
+            <h3> Copyright 2023 IUT Haguenau & Acikoz Melih, Brunier Enzo, Elharar Etane, Morisset Lucas et Neda Lorena
+            </h3>
         </footer>
     </main>
-    
+
 
 
 </body>
