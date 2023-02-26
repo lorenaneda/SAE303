@@ -353,6 +353,10 @@
     justify-content: center;
     margin-top: 3%;
 }
+.credits a{
+    text-decoration: none;
+    color: white;
+}
 
 
 @media (min-width: 321px) and (max-width: 500px) {
