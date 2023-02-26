@@ -213,6 +213,8 @@
     width: 100%;
     margin-top: 22%;
     margin-inline-start: 2%;
+    display: flex;
+    flex-direction: row;
 }
 
 .info4>img {
@@ -221,13 +223,11 @@
 
 .info5 {
     z-index: 1;
-    display: flex;
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
-    margin-inline-end: 10%;
-    width: 35%;
-    flex-direction: row-reverse;
+    width: 30%;
+    margin-inline-start: 70%;
 }
 
 .info6 {
@@ -238,7 +238,7 @@
     justify-content: space-around;
     margin-inline-start: 2%;
     gap: 5%;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 .info6_div1 {
