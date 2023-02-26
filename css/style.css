@@ -118,6 +118,12 @@
     height: 100%;
 }
 
+.info1_div1 > h3{
+    font-style: italic;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 0.8rem;
+}
+
 .info1_div2 {
     width: 50%;
     height: 100%;
@@ -174,7 +180,13 @@
     margin-top: -5%;
 }
 
-.info2_div3>span {
+.info2_div3 span h3{
+    font-style: italic;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 0.8rem;
+}
+
+.info2_div3 > span{
     width: 25%;
 }
 
@@ -201,6 +213,15 @@
     justify-content: space-around;
 }
 
+.info3 h3{
+    font-style: italic;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
 #animation {
     width: 60%;
     height: 100%;
@@ -214,11 +235,18 @@
     margin-top: 22%;
     margin-inline-start: 2%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.info4>img {
+.info4 > img {
     width: 56%;
+}
+
+.info4 > h3{
+    font-style: italic;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 0.8rem;
+
 }
 
 .info5 {
@@ -228,6 +256,15 @@
     overflow-x: hidden;
     width: 30%;
     margin-inline-start: 70%;
+}
+
+.info5 > h3{
+    font-style: italic;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
 .info6 {
@@ -243,6 +280,13 @@
 
 .info6_div1 {
     width: 40%;
+}
+
+.info6_div1 > h3{
+    font-style: italic;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 0.8rem;
+    color: white;
 }
 
 .info6_div2 {
@@ -278,12 +322,19 @@
     position: relative;
     width: 100%;
     margin-inline-start: 10%;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 .video > video {
     width: 80%;
     height: 100%;
+}
+
+.video > h3{
+    font-style: italic;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 0.8rem;
+    color: white;
 }
 
 .footer_riviere {
@@ -300,7 +351,7 @@
     z-index: 2;
     display: flex;
     justify-content: center;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 
@@ -313,29 +364,50 @@
         font-size: 1rem;
     }
     .info1 {
-        margin-top: 38%;
+        margin-top: 30%;
+    }
+    .info1_div1 > h3{
+        font-size: 0.3rem;
     }
     .info2 {
         margin-top: -1%;
     }
+    .info2_div3 span h3{
+        font-size: 0.3rem;
+    }
     .info3{
-        margin-top: 10%;
+        margin-top: 14%;
     }
     .info3 > h2{
         font-size: 0.5rem;
     }
+    .info3 h3{
+        font-size: 0.3rem;
+    }
     .info4{
-        margin-top: 17%;
+        margin-top: 19%;
+    }
+    .info4 > h3{
+        font-size: 0.3rem;
+    }
+    .info5 > h3{
+        font-size: 0.3rem;
+    }
+    .info6_div1 > h3{
+        font-size: 0.3rem;
+    }
+    .video > h3{
+        font-size: 0.3rem;
     }
     .credits {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         margin-top: 1%;
     }
 }
 
 @media (min-width: 500px) and (max-width: 799px) {
     .head {
-        height: 15%;
+        height: 20%;
     }
 
     .titre {
@@ -344,55 +416,88 @@
     .info1 {
         margin-top: 35%;
     }
+    .info1_div1 > h3{
+        font-size: 0.5rem;
+    }
     .info2 {
         margin-top: 2%;
     }
+    .info2_div3 span h3{
+        font-size: 0.5rem;
+    }
     .info3{
-        margin-top: 7%;
+        margin-top: 5%;
     }
     .info3 > h2{
         font-size: 0.7rem;
     }
+    .info3 h3{
+        font-size: 0.5rem;
+    }
+    .info4{
+        margin-top: 18%;
+    }
+    .info4 > h3{
+        font-size: 0.5rem;
+    }
+    .info5 > h3{
+        font-size: 0.5rem;
+    }
+    .info6{
+        margin-top: 4%;
+    }
+    .info6_div1 > h3{
+        font-size: 0.5rem;
+    }
+    .video > h3{
+        font-size: 0.5rem;
+    }
     .credits {
         font-size: 0.6rem;
-        margin-top: 1%;
+        margin-top: 3%;
     }
 }
 
 @media (min-width: 800px) and (max-width: 1200px) {
     .head {
-        height: 25%;
+        height: 20%;
     }
 
     .titre {
         font-size: 3rem;
     }
     .info1 {
-        margin-top: 30%;
+        margin-top: 35%;
     }
     .info2 {
-        margin-top: 8%;
+        margin-top: -1%;
     }
+
     .info3{
-        margin-top: 10%;
+        margin-top: 7%;
     }
     .info3 > h2{
         font-size: 1rem;
     }
     .info4{
-        margin-top: 17%;
+        margin-top: 22%;
     }
+    .info6{
+        margin-top: 5%;
+    }
+    
+    
 }
 
 @media (min-width: 1200px) and (max-width: 1920px) {
     .head {
-        height: 30%;
+        height: 25%;
     }
     .info1 {
-        margin-top: 21%;
+        margin-top: 25%;
     }
     .info2 {
-        margin-top: 10%;
+        margin-top: 3%;
     }
     .info3{
         margin-top: 13%;
